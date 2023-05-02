@@ -3,7 +3,7 @@
 
 class character{
 public:
-    std::string weapon;
+    std::string weapon = "None";
     virtual ~character() {};
     virtual character* clone() const = 0;
     virtual void printCharacterStats() const = 0;
