@@ -1,17 +1,14 @@
 #include <iostream>
 
-class Test{
-public:
-    int a;
-    int b;
-    Test(int a, int b) :
-        a(a), b(b)
-    {}
-};
+void printArray(int arr[], int size) {
+    for (int i = 0; i < size; i++) {
+        std::cout << arr[i] << " ";
+    }
+    std::cout << std::endl;
+}
 
 int main() {
-    Test t(69, 420);
-    std::cout <<t.a<<std::endl;
-    std::cout <<t.b<<std::endl;
+    printArray(new int[]{1, 2, 3, 4, 5}, 5);
+
     return 0;
 }
